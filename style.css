@@ -1,91 +1,100 @@
 body {
-    font-family: Arial;
-    color: white;
-  }
-  
-  .split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  .left {
-    left: 0;
-    background-color: #ffffff;
-  }
-  
-  .right {
-    right: 0;
-    background-color: rgb(71, 37, 240);
-  }
-  .container {
-    padding: 30px;
-    border-radius: 5px;
- 
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  height: 100vh;
+  display: flex;
 }
-  
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .centered img {
-    width: 770px;
-    height: 710px;
-    
-  }
-  a {
-    color: #ccc;
-    text-decoration: none;
-  }
 
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #ffffff;
+}
+
+.right {
+  right: 0;
+  background-color: rgb(71, 37, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 100%;
+  max-width: 770px;
+  height: auto;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 label {
-    margin-bottom: 5px;
-    display: block;
-    text-align: center;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
 }
 
 input[type="text"],
 input[type="password"] {
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
-.checkbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.checkbox a {
-    font-size: 12px;
-    color: #999;
-}
-.checkbox label{
-    text-align: center;   
+.checkbox-container a {
+  font-size: 12px;
+  color: #999;
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #0067cc;
+  background-color: #0067cc;
 }
